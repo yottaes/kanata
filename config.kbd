@@ -1,0 +1,214 @@
+;; Kanata config - QWERTY + Symbols layer
+;; Converted from ZSA Voyager layout
+
+(defcfg
+  process-unmapped-keys yes
+)
+
+;; Mac keyboard source definition
+(defsrc
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  fn   lctl lalt lmet           spc            rmet ralt
+                                          up
+                                     left down rght
+)
+
+;; Aliases
+(defalias
+  ;; Left cmd: tap = cmd, hold = aerospace layer (window management)
+  lc (tap-hold-press 200 200 lmet (layer-while-held aerospace))
+
+  ;; Caps Lock: tap = escape, hold = control
+  cap (tap-hold 165 165 esc lctl)
+
+  ;; Semicolon: tap = ;, hold = Hyper (Ctrl+Shift+Alt+Cmd) for Aerospace
+  scl (tap-hold 165 165 ; (multi lctl lsft lalt lmet))
+
+  ;; A: tap = a, hold = arrows layer (vim-style navigation)
+  arr (tap-hold 200 200 a (layer-while-held arrows))
+
+  ;; Tmux: tap = Ctrl+Q (tmux prefix), hold = tmux layer
+  tmx (tap-hold 165 165 C-q (layer-while-held tmux))
+
+  ;; Tmux macros - exact copy from Voyager Layer 4
+  ;; MACRO_0: C-q then (
+  m0 (macro C-q 5 S-9)
+  ;; MACRO_1: C-q then C-left
+  m1 (macro C-q 5 C-left)
+  ;; MACRO_2: C-q then C-down
+  m2 (macro C-q 5 C-down)
+  ;; MACRO_3: C-q then C-up
+  m3 (macro C-q 5 C-up)
+  ;; MACRO_4: C-q then C-right
+  m4 (macro C-q 5 C-rght)
+  ;; MACRO_5: C-q then %
+  m5 (macro C-q 5 S-5)
+  ;; MACRO_6: C-q then {
+  m6 (macro C-q 5 S-[)
+  ;; MACRO_7: C-q then }
+  m7 (macro C-q 5 S-])
+  ;; MACRO_8: C-q then "
+  m8 (macro C-q 5 S-')
+  ;; MACRO_9: C-q then z
+  m9 (macro C-q 5 z)
+  ;; MACRO_10: C-q then left
+  m10 (macro C-q 5 left)
+  ;; MACRO_11: C-q then down
+  m11 (macro C-q 5 down)
+  ;; MACRO_12: C-q then up
+  m12 (macro C-q 5 up)
+  ;; MACRO_13: C-q then right
+  m13 (macro C-q 5 rght)
+  ;; MACRO_14: C-q then )
+  m14 (macro C-q 5 S-0)
+
+  ;; Window navigation (Alt keys for tmux)
+  wnl A-n           ;; go to left window
+  wnr A-e           ;; go to right window
+  wsl A-l           ;; swap window left
+  wsr A-u           ;; swap window right
+
+  ;; Auto-shift for /
+  slq (tap-hold 165 165 / S-/)
+
+  ;; Right shift: tap = shift, hold = left cmd
+  rsh (tap-hold 165 165 rsft lmet)
+
+  ;; Right option: tap = ralt, hold = backlight layer
+  rop (tap-hold 165 165 ralt (layer-while-held backlight))
+
+  ;; Space: tap = space, hold = symbols layer
+  sym (tap-hold-press 200 200 spc (layer-while-held symbols))
+
+  ;; Aerospace window management (Hyper = Ctrl+Shift+Alt+Cmd, Meh = Ctrl+Shift+Alt)
+  ;; Move window: Hyper + arrows
+  mvl (multi lctl lsft lalt lmet left)
+  mvd (multi lctl lsft lalt lmet down)
+  mvu (multi lctl lsft lalt lmet up)
+  mvr (multi lctl lsft lalt lmet rght)
+  ;; Focus window: Meh + arrows
+  fcl (multi lctl lsft lalt left)
+  fcd (multi lctl lsft lalt down)
+  fcu (multi lctl lsft lalt up)
+  fcr (multi lctl lsft lalt rght)
+  ;; Resize window: Hyper + plus/minus
+  rsp (multi lctl lsft lalt lmet =)
+  rsm (multi lctl lsft lalt lmet -)
+  ;; Tab/space switching: Alt+Cmd+arrows
+  tbl A-M-left
+  tbr A-M-rght
+  ;; Layout cycling: Meh + comma/slash
+  cyh (multi lctl lsft lalt ,)      ;; horizontal
+  cyv (multi lctl lsft lalt /)      ;; vertical
+
+  ;; Window maximize toggle: Hyper+M
+  wmx (multi lctl lsft lalt lmet m)
+
+  ;; Reset Aerospace config: Hyper+R
+  rst (multi lctl lsft lalt lmet r)
+
+  ;; Tmux session navigation (on aerospace layer for convenience)
+  tsp (macro C-q 5 S-9)             ;; previous session: C-q (
+  tsn (macro C-q 5 S-0)             ;; next session: C-q )
+
+  ;; Joins: Hyper + direction keys for joining windows
+  jnl (multi lctl lsft lalt lmet z)  ;; join left
+  jnd (multi lctl lsft lalt lmet x)  ;; join down
+  jnu (multi lctl lsft lalt lmet c)  ;; join up
+  jnr (multi lctl lsft lalt lmet v)  ;; join right
+
+  ;; Left shift: tap = Alt+Tab, hold = shift
+  lsh (tap-hold 165 165 A-tab lsft)
+
+  ;; Equal key: tap = =, hold = Option+Command
+  eql (tap-hold 165 165 = (multi lalt lmet))
+)
+
+;; Base layer - QWERTY (mostly passthrough, with key modifications)
+(deflayer base
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  grv  1    2    3    4    5    6    7    8    9    0    -    @eql bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  @cap @arr s    d    f    g    h    j    k    l    @scl '    ret
+  @lsh z    x    c    v    b    n    m    ,    .    @slq @rsh
+  fn   lctl lalt @lc            @sym           @tmx @rop
+                                          up
+                                     left down rght
+)
+
+;; Symbols layer - activated by holding Left Cmd
+;; Layout based on Voyager Layer 3
+(deflayer symbols
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    S-`  S-2  S-7  S-5  S-9  S-0  ,    S-6  S-4  ;    _    _    _
+  _    S-1  S-3  S-8  S-;  S-[  S-]  =    S-=  -    S--  S-'  _
+  _    _    _    _    S-\  [    ]    _    S-,  S-.  S-/  _
+  _    _    _    _              _              _    _
+                                          _
+                                     _    _    _
+)
+
+;; Arrows layer - activated by holding A
+;; Vim-style: h=left, j=down, k=up, l=right
+(deflayer arrows
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    left down up   rght _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _              _              _    _
+                                          _
+                                     _    _    _
+)
+
+;; Tmux layer - activated by holding right cmd
+;; Voyager Layer 4 layout moved to home row
+;; Home row left: ( resize-L/D/U/R %
+;; Home row right: zoom nav-L/D/U/R )
+;; Z-row: { } "
+(deflayer tmux
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    @wsl @wsr _    _    _    _    _
+  @m0  @m1  @m2  @m3  @m4  @m5  @m9  @m10 @m11 @m12 @m13 @m14 _
+  _    _    _    @m6  @m7  @m8  @wnl @wnr _    _    _    _
+  _    _    _    _              _              _    _
+                                          _
+                                     _    _    _
+)
+
+;; Backlight layer - activated by holding right option
+;; up = increase, down = decrease keyboard backlight
+(deflayer backlight
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _              _              _    _
+                                          blup
+                                     _    bldn _
+)
+
+;; Aerospace layer - activated by holding Left Cmd
+;; Voyager Layer 5 layout for window management
+;; Top row: tab switching, window max toggle on P
+;; Home row: resize+, move window, tmux session nav
+;; Bottom row: resize-, focus window (m,.//)
+;; Z-row: joins (z=left, x=down, c=up, v=right)
+;; fn = reset config, rmet = horizontal, ralt = vertical
+(deflayer aerospace
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    @tbl @tbr _    @wmx _    _    _
+  @tsp _    _    _    _    _    @rsp @mvl @mvd @mvu @mvr _    @tsn
+  _    @jnl @jnd @jnu @jnr _    @rsm @fcl @fcd @fcu @fcr _
+  @rst _    _    _              _              @cyh @cyv
+                                          _
+                                     _    _    _
+)

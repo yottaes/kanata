@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanata Config Visualizer</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e; color: #eee; padding: 20px; min-height: 100vh;
+        }
+        h1 { text-align: center; margin-bottom: 10px; color: #fff; }
+        .subtitle { text-align: center; color: #888; margin-bottom: 20px; }
+        .layer-tabs { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+        .layer-tab {
+            padding: 10px 20px; background: #2a2a4a; border: none; border-radius: 8px;
+            color: #aaa; cursor: pointer; font-size: 14px; transition: all 0.2s;
+        }
+        .layer-tab:hover { background: #3a3a5a; color: #fff; }
+        .layer-tab.active { background: #4a4a8a; color: #fff; }
+        .keyboard {
+            max-width: 1100px; margin: 0 auto; background: #252540;
+            padding: 20px; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+        .row { display: flex; justify-content: center; margin-bottom: 6px; gap: 4px; }
+        .key {
+            min-width: 55px; height: 55px; background: linear-gradient(145deg, #3a3a5a, #2a2a4a);
+            border: 1px solid #4a4a6a; border-radius: 8px; display: flex; flex-direction: column;
+            align-items: center; justify-content: center; font-size: 11px; color: #ddd;
+            position: relative; cursor: pointer; transition: all 0.15s;
+        }
+        .key:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.4); background: linear-gradient(145deg, #4a4a7a, #3a3a5a); }
+        .key.modified { background: linear-gradient(145deg, #4a6a4a, #3a5a3a); border-color: #5a8a5a; }
+        .key.layer-key { background: linear-gradient(145deg, #6a4a6a, #5a3a5a); border-color: #8a5a8a; }
+        .key.macro { background: linear-gradient(145deg, #4a4a6a, #3a3a8a); border-color: #5a5a9a; }
+        .key.transparent { background: linear-gradient(145deg, #2a2a3a, #1a1a2a); border-color: #3a3a4a; color: #666; }
+        .key .main { font-weight: bold; font-size: 13px; }
+        .key .hold { font-size: 9px; color: #f90; margin-top: 2px; }
+        .key .tap { font-size: 9px; color: #9f9; margin-top: 1px; }
+        .key.wide { min-width: 75px; } .key.wider { min-width: 90px; }
+        .key.widest { min-width: 110px; } .key.space { min-width: 280px; }
+        .legend { display: flex; justify-content: center; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
+        .legend-item { display: flex; align-items: center; gap: 8px; font-size: 12px; }
+        .legend-color { width: 20px; height: 20px; border-radius: 4px; }
+        .legend-color.normal { background: linear-gradient(145deg, #3a3a5a, #2a2a4a); }
+        .legend-color.modified { background: linear-gradient(145deg, #4a6a4a, #3a5a3a); }
+        .legend-color.layer { background: linear-gradient(145deg, #6a4a6a, #5a3a5a); }
+        .legend-color.macro { background: linear-gradient(145deg, #4a4a6a, #3a3a8a); }
+        .info-panel { max-width: 1100px; margin: 20px auto; background: #252540; padding: 20px; border-radius: 12px; }
+        .info-panel h3 { margin-bottom: 10px; color: #aaa; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
+        .info-item { background: #1a1a2e; padding: 10px; border-radius: 8px; font-size: 12px; }
+        .info-item .key-name { color: #9f9; font-weight: bold; }
+        .info-item .action { color: #f90; }
+    </style>
+</head>
+<body>
+    <h1>Kanata Config Visualizer</h1>
+    <p class="subtitle">Interactive keyboard layout viewer</p>
+    <div class="layer-tabs">
+        <button class="layer-tab active" data-layer="base">Base</button>
+        <button class="layer-tab" data-layer="symbols">Symbols (Space)</button>
+        <button class="layer-tab" data-layer="arrows">Arrows (A)</button>
+        <button class="layer-tab" data-layer="tmux">Tmux (R-Cmd)</button>
+        <button class="layer-tab" data-layer="aerospace">Aerospace (L-Cmd)</button>
+        <button class="layer-tab" data-layer="backlight">Backlight (R-Opt)</button>
+    </div>
+    <div class="keyboard" id="keyboard"></div>
+    <div class="legend">
+        <div class="legend-item"><div class="legend-color normal"></div> Normal key</div>
+        <div class="legend-item"><div class="legend-color modified"></div> Tap-Hold key</div>
+        <div class="legend-item"><div class="legend-color layer"></div> Layer activator</div>
+        <div class="legend-item"><div class="legend-color macro"></div> Macro</div>
+    </div>
+    <div class="info-panel">
+        <h3>Layer Details</h3>
+        <div class="info-grid" id="info-grid"></div>
+    </div>
+    <script>
+        const layers = {
+            base: {
+                rows: [
+                    [{k:"esc"},{k:"F1"},{k:"F2"},{k:"F3"},{k:"F4"},{k:"F5"},{k:"F6"},{k:"F7"},{k:"F8"},{k:"F9"},{k:"F10"},{k:"F11"},{k:"F12"}],
+                    [{k:"`"},{k:"1"},{k:"2"},{k:"3"},{k:"4"},{k:"5"},{k:"6"},{k:"7"},{k:"8"},{k:"9"},{k:"0"},{k:"-"},{k:"=",hold:"Opt+Cmd",type:"modified"},{k:"bspc",c:"wide"}],
+                    [{k:"tab",c:"wide"},{k:"Q"},{k:"W"},{k:"E"},{k:"R"},{k:"T"},{k:"Y"},{k:"U"},{k:"I"},{k:"O"},{k:"P"},{k:"["},{k:"]"},{k:"\\",c:"wide"}],
+                    [{k:"esc",hold:"Ctrl",type:"modified",c:"wider"},{k:"A",hold:"Arrows",type:"layer"},{k:"S"},{k:"D"},{k:"F"},{k:"G"},{k:"H"},{k:"J"},{k:"K"},{k:"L"},{k:";",hold:"Hyper",type:"modified"},{k:"'"},{k:"return",c:"wider"}],
+                    [{k:"Alt+Tab",hold:"Shift",type:"modified",c:"widest"},{k:"Z"},{k:"X"},{k:"C"},{k:"V"},{k:"B"},{k:"N"},{k:"M"},{k:","},{k:"."},{k:"/",hold:"?",type:"modified"},{k:"Shift",hold:"L-Cmd",type:"modified",c:"widest"}],
+                    [{k:"fn"},{k:"ctrl"},{k:"opt"},{k:"Cmd",hold:"Aerospace",type:"layer",c:"wide"},{k:"Space",hold:"Symbols",type:"layer",c:"space"},{k:"Tmux",tap:"C-q",hold:"Tmux",type:"layer",c:"wide"},{k:"opt",hold:"Backlight",type:"layer"}],
+                    [{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"up"},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1}],
+                    [{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"left"},{k:"down"},{k:"right"},{k:"",skip:1},{k:"",skip:1}]
+                ],
+                details: [["Caps Lock","tap=Esc, hold=Ctrl"],["A","tap=a, hold=Arrows layer"],["Semicolon","tap=;, hold=Hyper"],["Left Shift","tap=Alt+Tab, hold=Shift"],["Right Shift","tap=Shift, hold=Left Cmd"],["Left Cmd","tap=Cmd, hold=Aerospace layer"],["Space","tap=Space, hold=Symbols layer"],["Right Cmd","tap=C-q, hold=Tmux layer"],["Right Opt","tap=opt, hold=Backlight layer"],["Equal","tap==, hold=Opt+Cmd"],["Slash","tap=/, hold=?"]]
+            },
+            symbols: {
+                rows: [
+                    [{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"}],
+                    [{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_",c:"wide"}],
+                    [{k:"_",c:"wide"},{k:"~"},{k:"@"},{k:"&"},{k:"%"},{k:"("},{k:")"},{k:","},{k:"^"},{k:"$"},{k:";"},{k:"_"},{k:"_"},{k:"_",c:"wide"}],
+                    [{k:"_",c:"wider"},{k:"!"},{k:"#"},{k:"*"},{k:":"},{k:"{"},{k:"}"},{k:"="},{k:"+"},{k:"-"},{k:"_"},{k:"\""},{k:"_",c:"wider"}],
+                    [{k:"_",c:"widest"},{k:"_"},{k:"_"},{k:"_"},{k:"|"},{k:"["},{k:"]"},{k:"_"},{k:"<"},{k:">"},{k:"?"},{k:"_",c:"widest"}],
+                    [{k:"_"},{k:"_"},{k:"_"},{k:"_",c:"wide"},{k:"HELD",type:"layer",c:"space"},{k:"_",c:"wide"},{k:"_"}],
+                    [{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"_"},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1}],
+                    [{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"_"},{k:"_"},{k:"_"},{k:"",skip:1},{k:"",skip:1}]
+                ],
+                details: [["Q row","~ @ & % ( ) , ^ $ ;"],["A row","! # * : { } = + - _"],["Z row","| [ ] < > ?"]]
+            },
+            arrows: {
+                rows: [
+                    [{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"}],
+                    [{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_",c:"wide"}],
+                    [{k:"_",c:"wide"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_",c:"wide"}],
+                    [{k:"_",c:"wider"},{k:"HELD",type:"layer"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"LEFT",type:"modified"},{k:"DOWN",type:"modified"},{k:"UP",type:"modified"},{k:"RIGHT",type:"modified"},{k:"_"},{k:"_"},{k:"_",c:"wider"}],
+                    [{k:"_",c:"widest"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_",c:"widest"}],
+                    [{k:"_"},{k:"_"},{k:"_"},{k:"_",c:"wide"},{k:"_",c:"space"},{k:"_",c:"wide"},{k:"_"}],
+                    [{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"_"},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1}],
+                    [{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"_"},{k:"_"},{k:"_"},{k:"",skip:1},{k:"",skip:1}]
+                ],
+                details: [["H","Left arrow"],["J","Down arrow"],["K","Up arrow"],["L","Right arrow"]]
+            },
+            tmux: {
+                rows: [
+                    [{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"}],
+                    [{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_",c:"wide"}],
+                    [{k:"_",c:"wide"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"SwapL",type:"macro"},{k:"SwapR",type:"macro"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_",c:"wide"}],
+                    [{k:"C-q (",type:"macro",c:"wider"},{k:"RszL",type:"macro"},{k:"RszD",type:"macro"},{k:"RszU",type:"macro"},{k:"RszR",type:"macro"},{k:"C-q %",type:"macro"},{k:"Zoom",type:"macro"},{k:"NavL",type:"macro"},{k:"NavD",type:"macro"},{k:"NavU",type:"macro"},{k:"NavR",type:"macro"},{k:"C-q )",type:"macro"},{k:"_",c:"wider"}],
+                    [{k:"_",c:"widest"},{k:"_"},{k:"_"},{k:"C-q {",type:"macro"},{k:"C-q }",type:"macro"},{k:"C-q \"",type:"macro"},{k:"WinL",type:"macro"},{k:"WinR",type:"macro"},{k:"_"},{k:"_"},{k:"_"},{k:"_",c:"widest"}],
+                    [{k:"_"},{k:"_"},{k:"_"},{k:"_",c:"wide"},{k:"_",c:"space"},{k:"HELD",type:"layer",c:"wide"},{k:"_"}],
+                    [{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"_"},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1}],
+                    [{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"_"},{k:"_"},{k:"_"},{k:"",skip:1},{k:"",skip:1}]
+                ],
+                details: [["Caps (A)","C-q ( - Copy mode"],["S,D,F,G","Resize pane L/D/U/R"],["H","C-q % - Split vertical"],["J","C-q z - Zoom toggle"],["K,L,;,'","Navigate pane L/D/U/R"],["Return","C-q ) - Exit copy"],["C,V,B","C-q { } \" - Swap/Split"],["N,M","Go to L/R window"],["U,I","Swap window L/R"]]
+            },
+            aerospace: {
+                rows: [
+                    [{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"}],
+                    [{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_",c:"wide"}],
+                    [{k:"_",c:"wide"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"TabL",type:"modified"},{k:"TabR",type:"modified"},{k:"_"},{k:"Max",type:"modified"},{k:"_"},{k:"_"},{k:"_",c:"wide"}],
+                    [{k:"SessPrv",type:"macro",c:"wider"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"Size+",type:"modified"},{k:"MoveL",type:"modified"},{k:"MoveD",type:"modified"},{k:"MoveU",type:"modified"},{k:"MoveR",type:"modified"},{k:"_"},{k:"SessNxt",type:"macro",c:"wider"}],
+                    [{k:"_",c:"widest"},{k:"JoinL",type:"modified"},{k:"JoinD",type:"modified"},{k:"JoinU",type:"modified"},{k:"JoinR",type:"modified"},{k:"_"},{k:"Size-",type:"modified"},{k:"FocusL",type:"modified"},{k:"FocusD",type:"modified"},{k:"FocusU",type:"modified"},{k:"FocusR",type:"modified"},{k:"_",c:"widest"}],
+                    [{k:"Reset",type:"modified"},{k:"_"},{k:"_"},{k:"HELD",type:"layer",c:"wide"},{k:"_",c:"space"},{k:"Horiz",type:"modified",c:"wide"},{k:"Vert",type:"modified"}],
+                    [{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"_"},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1}],
+                    [{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"_"},{k:"_"},{k:"_"},{k:"",skip:1},{k:"",skip:1}]
+                ],
+                details: [["U,I","Tab switch L/R (Alt+Cmd)"],["P","Window max toggle (Hyper+M)"],["H","Resize bigger (Hyper+=)"],["J,K,L,;","Move window (Hyper+arrows)"],["N","Resize smaller (Hyper+-)"],["M,comma,dot,/","Focus window (Meh+arrows)"],["Z,X,C,V","Join windows (Hyper+Z/X/C/V)"],["Caps","Prev tmux session"],["Return","Next tmux session"],["fn","Reset Aerospace (Hyper+R)"],["R-Cmd","Horizontal layout (Meh+,)"],["R-Opt","Vertical layout (Meh+/)"]]
+            },
+            backlight: {
+                rows: [
+                    [{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"}],
+                    [{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_",c:"wide"}],
+                    [{k:"_",c:"wide"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_",c:"wide"}],
+                    [{k:"_",c:"wider"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_",c:"wider"}],
+                    [{k:"_",c:"widest"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_"},{k:"_",c:"widest"}],
+                    [{k:"_"},{k:"_"},{k:"_"},{k:"_",c:"wide"},{k:"_",c:"space"},{k:"_",c:"wide"},{k:"HELD",type:"layer"}],
+                    [{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"BL UP",type:"modified"},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1}],
+                    [{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"",skip:1},{k:"_"},{k:"BL DN",type:"modified"},{k:"_"},{k:"",skip:1},{k:"",skip:1}]
+                ],
+                details: [["Up Arrow","Increase keyboard backlight"],["Down Arrow","Decrease keyboard backlight"]]
+            }
+        };
+
+        function renderKeyboard(layerName) {
+            const layer = layers[layerName];
+            const keyboard = document.getElementById('keyboard');
+            const infoGrid = document.getElementById('info-grid');
+
+            while (keyboard.firstChild) keyboard.removeChild(keyboard.firstChild);
+            while (infoGrid.firstChild) infoGrid.removeChild(infoGrid.firstChild);
+
+            layer.rows.forEach(function(row) {
+                const rowDiv = document.createElement('div');
+                rowDiv.className = 'row';
+
+                row.forEach(function(key) {
+                    if (key.skip) return;
+                    const keyDiv = document.createElement('div');
+                    let classes = ['key'];
+                    if (key.c) classes.push(key.c);
+                    if (key.type) classes.push(key.type);
+                    if (key.k === '_') classes.push('transparent');
+                    keyDiv.className = classes.join(' ');
+
+                    const mainSpan = document.createElement('span');
+                    mainSpan.className = 'main';
+                    mainSpan.textContent = key.k;
+                    keyDiv.appendChild(mainSpan);
+
+                    if (key.hold) {
+                        const holdSpan = document.createElement('span');
+                        holdSpan.className = 'hold';
+                        holdSpan.textContent = key.hold;
+                        keyDiv.appendChild(holdSpan);
+                    }
+                    if (key.tap) {
+                        const tapSpan = document.createElement('span');
+                        tapSpan.className = 'tap';
+                        tapSpan.textContent = key.tap;
+                        keyDiv.appendChild(tapSpan);
+                    }
+                    rowDiv.appendChild(keyDiv);
+                });
+                keyboard.appendChild(rowDiv);
+            });
+
+            layer.details.forEach(function(detail) {
+                const item = document.createElement('div');
+                item.className = 'info-item';
+                const keyName = document.createElement('span');
+                keyName.className = 'key-name';
+                keyName.textContent = detail[0];
+                const action = document.createElement('span');
+                action.className = 'action';
+                action.textContent = detail[1];
+                item.appendChild(keyName);
+                item.appendChild(document.createTextNode(': '));
+                item.appendChild(action);
+                infoGrid.appendChild(item);
+            });
+        }
+
+        document.querySelectorAll('.layer-tab').forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.layer-tab').forEach(function(t) { t.classList.remove('active'); });
+                tab.classList.add('active');
+                renderKeyboard(tab.dataset.layer);
+            });
+        });
+
+        renderKeyboard('base');
+    </script>
+</body>
+</html>
