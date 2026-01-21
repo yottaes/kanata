@@ -1,8 +1,0 @@
-22:04:35.0572 [0m[34m[INFO] [0mkanata v1.10.1 starting
-22:04:35.0584 [0m[34m[INFO] [0mprocess unmapped keys: true
-22:04:35.0588 [0m[34m[INFO] [0mNOTE: kanata was compiled to never allow cmd
-22:04:35.0613 [0m[34m[INFO] [0mconfig file is valid
-22:04:35.0615 [0m[34m[INFO] [0mSleeping for 2s. Please release all keys and don't press additional ones. Run kanata with --help to see how understand more and how to disable this sleep.
-22:04:37.0802 [0m[34m[INFO] [0mentering the processing loop
-22:04:37.0806 [0m[34m[INFO] [0mentering the event loop
-22:04:37.0806 [0m[34m[INFO] [0mInit: catching only releases and sending immediately
