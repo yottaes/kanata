@@ -1,8 +1,10 @@
-;; Kanata config - QWERTY + Symbols layer
-;; Converted from ZSA Voyager layout
+;; Kanata config - QWERTY/Colemak-DH switchable
+;; Press A+F12 to toggle between layouts
 
 (defcfg
   process-unmapped-keys yes
+  concurrent-tap-hold yes
+  rapid-event-delay 5
 )
 
 ;; Mac keyboard source definition
@@ -20,19 +22,19 @@
 ;; Aliases
 (defalias
   ;; Left cmd: tap = cmd, hold = aerospace layer (window management)
-  lc (tap-hold-press 200 200 lmet (layer-while-held aerospace))
+  lc (tap-hold-press 150 150 lmet (layer-while-held aerospace))
 
   ;; Caps Lock: tap = escape, hold = control
-  cap (tap-hold 165 165 esc lctl)
+  cap (tap-hold-press 150 150 esc lctl)
 
   ;; Semicolon: tap = ;, hold = Hyper (Ctrl+Shift+Alt+Cmd) for Aerospace
-  scl (tap-hold 165 165 ; (multi lctl lsft lalt lmet))
+  scl (tap-hold-press 150 150 ; (multi lctl lsft lalt lmet))
 
-  ;; A: tap = a, hold = arrows layer (vim-style navigation)
+  ;; A: tap = a, hold = arrows layer (longer timeout to avoid misfires)
   arr (tap-hold 200 200 a (layer-while-held arrows))
 
   ;; Tmux: tap = Ctrl+Q (tmux prefix), hold = tmux layer
-  tmx (tap-hold 165 165 C-q (layer-while-held tmux))
+  tmx (tap-hold-press 150 150 C-q (layer-while-held tmux))
 
   ;; Tmux macros - exact copy from Voyager Layer 4
   ;; MACRO_0: C-q then (
@@ -73,16 +75,16 @@
   wsr A-u           ;; swap window right
 
   ;; Auto-shift for /
-  slq (tap-hold 165 165 / S-/)
+  slq (tap-hold-press 150 150 / S-/)
 
   ;; Right shift: tap = shift, hold = left cmd
-  rsh (tap-hold 165 165 rsft lmet)
+  rsh (tap-hold-press 150 150 rsft lmet)
 
   ;; Right option: tap = ralt, hold = backlight layer
-  rop (tap-hold 165 165 ralt (layer-while-held backlight))
+  rop (tap-hold-press 150 150 ralt (layer-while-held backlight))
 
   ;; Space: tap = space, hold = symbols layer
-  sym (tap-hold-press 200 200 spc (layer-while-held symbols))
+  sym (tap-hold-press 150 150 spc (layer-while-held symbols))
 
   ;; Aerospace window management (Hyper = Ctrl+Shift+Alt+Cmd, Meh = Ctrl+Shift+Alt)
   ;; Move window: Hyper + arrows
@@ -122,22 +124,41 @@
   jnr (multi lctl lsft lalt lmet v)  ;; join right
 
   ;; Left shift: tap = Alt+Tab, hold = shift
-  lsh (tap-hold 165 165 A-tab lsft)
+  lsh (tap-hold-press 150 150 A-tab lsft)
 
   ;; Equal key: tap = =, hold = Option+Command
-  eql (tap-hold 165 165 = (multi lalt lmet))
+  eql (tap-hold-press 150 150 = (multi lalt lmet))
 
-  ;; Apostrophe: tap = ', hold = Command
-  apo (tap-hold 165 165 ' lmet)
+  ;; Apostrophe: tap = ', hold = Hyper (Ctrl+Shift+Alt+Cmd)
+  apo (tap-hold-press 150 150 ' (multi lctl lsft lalt lmet))
+
+  ;; Layer switching between QWERTY and Colemak-DH
+  toqwerty (layer-switch qwerty)
+  tocolemak (layer-switch colemak)
+
+  ;; A key for Colemak mode (uses colemak arrows layer)
+  arr-c (tap-hold 200 200 a (layer-while-held arrows-colemak))
 )
 
-;; Base layer - QWERTY (mostly passthrough, with key modifications)
-(deflayer base
+;; Base layer - QWERTY (with key modifications)
+(deflayer qwerty
   esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
   grv  1    2    3    4    5    6    7    8    9    0    -    @eql bspc
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
-  @cap @arr s    d    f    g    h    j    k    l    @scl @apo ret
+  @cap @arr s    d    f    g    h    j    k    l    ;    @apo ret
   @lsh z    x    c    v    b    n    m    ,    .    @slq @rsh
+  fn   lctl lalt @lc            @sym           @tmx @rop
+                                          up
+                                     left down rght
+)
+
+;; Base layer - Colemak-DH (with key modifications)
+(deflayer colemak
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  grv  1    2    3    4    5    6    7    8    9    0    -    @eql bspc
+  tab  q    w    f    p    b    j    l    u    y    ;    [    ]    \
+  @cap @arr-c r    s    t    g    m    n    e    i    o    @apo ret
+  @lsh z    x    c    d    v    k    h    ,    .    @slq @rsh
   fn   lctl lalt @lc            @sym           @tmx @rop
                                           up
                                      left down rght
@@ -156,13 +177,28 @@
                                      _    _    _
 )
 
-;; Arrows layer - activated by holding A
-;; Vim-style: h=left, j=down, k=up, l=right
+;; Arrows layer for QWERTY - activated by holding A
+;; JKL; style: j=left, k=down, l=up, ;=right
+;; F12 switches to Colemak-DH
 (deflayer arrows
-  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    @tocolemak
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    left down up   rght _    _    _
+  _    _    _    _    _    _    _    left down up   rght _    _
+  _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _              _              _    _
+                                          _
+                                     _    _    _
+)
+
+;; Arrows layer for Colemak - activated by holding A
+;; JKL; style: j=left, k=down, l=up, ;=right
+;; F12 switches back to QWERTY
+(deflayer arrows-colemak
+  _    _    _    _    _    _    _    _    _    _    _    _    @toqwerty
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    left down up   rght _    _
   _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _              _              _    _
                                           _
