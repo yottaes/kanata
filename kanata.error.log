@@ -65,3 +65,466 @@ libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesys
 libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
 libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
 libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+21:48:35.7715 [0m[31m[ERROR] [0m  × Error in configuration
+     ╭─[/Users/bogdandegtyarev/.config/kanata/config.kbd:136:1]
+ 136 │   @lsh z    x    c    v    b    n    m    ,    .    @slq @rsh
+ 137 │   fn   lctl lalt @lc            @sym           @tmx @rop
+     ·                                                     ──┬─
+     ·                                                       ╰── Error here
+ 138 │                                           up
+     ╰────
+  help: Referenced unknown alias rop. Note that order of declarations
+        matter.
+        
+        For more info, see the configuration guide:
+        https://github.com/jtroo/kanata/blob/main/docs/config.adoc
+
+21:48:35.7726 [0m[31m[ERROR] [0mfailed to parse file
+
+
+Press enter to exit
+Error: failed to parse file
+21:48:45.8449 [0m[31m[ERROR] [0m  × Error in configuration
+     ╭─[/Users/bogdandegtyarev/.config/kanata/config.kbd:136:1]
+ 136 │   @lsh z    x    c    v    b    n    m    ,    .    @slq @rsh
+ 137 │   fn   lctl lalt @lc            @sym           @tmx @rop
+     ·                                                     ──┬─
+     ·                                                       ╰── Error here
+ 138 │                                           up
+     ╰────
+  help: Referenced unknown alias rop. Note that order of declarations
+        matter.
+        
+        For more info, see the configuration guide:
+        https://github.com/jtroo/kanata/blob/main/docs/config.adoc
+
+21:48:45.8454 [0m[31m[ERROR] [0mfailed to parse file
+
+
+Press enter to exit
+Error: failed to parse file
+21:48:55.8799 [0m[31m[ERROR] [0m  × Error in configuration
+     ╭─[/Users/bogdandegtyarev/.config/kanata/config.kbd:147:1]
+ 147 │   @lsh z    x    c    d    v    k    h    ,    .    @slq @rsh
+ 148 │   fn   lctl lalt @lc            @sym           @tmx @rop
+     ·                                                     ──┬─
+     ·                                                       ╰── Error here
+ 149 │                                           up
+     ╰────
+  help: Referenced unknown alias rop. Note that order of declarations
+        matter.
+        
+        For more info, see the configuration guide:
+        https://github.com/jtroo/kanata/blob/main/docs/config.adoc
+
+21:48:55.8800 [0m[31m[ERROR] [0mfailed to parse file
+
+
+Press enter to exit
+Error: failed to parse file
+21:49:05.9383 [0m[31m[ERROR] [0m  × Error in configuration
+     ╭─[/Users/bogdandegtyarev/.config/kanata/config.kbd:147:1]
+ 147 │   @lsh z    x    c    d    v    k    h    ,    .    @slq @rsh
+ 148 │   fn   lctl lalt @lc            @sym           @tmx @rop
+     ·                                                     ──┬─
+     ·                                                       ╰── Error here
+ 149 │                                           up
+     ╰────
+  help: Referenced unknown alias rop. Note that order of declarations
+        matter.
+        
+        For more info, see the configuration guide:
+        https://github.com/jtroo/kanata/blob/main/docs/config.adoc
+
+21:49:05.9385 [0m[31m[ERROR] [0mfailed to parse file
+
+
+Press enter to exit
+Error: failed to parse file
+21:49:15.9871 [0m[31m[ERROR] [0m  × Error in configuration
+     ╭─[/Users/bogdandegtyarev/.config/kanata/config.kbd:147:1]
+ 147 │   @lsh z    x    c    d    v    k    h    ,    .    @slq @rsh
+ 148 │   fn   lctl lalt @lc            @sym           @tmx @rop
+     ·                                                     ──┬─
+     ·                                                       ╰── Error here
+ 149 │                                           up
+     ╰────
+  help: Referenced unknown alias rop. Note that order of declarations
+        matter.
+        
+        For more info, see the configuration guide:
+        https://github.com/jtroo/kanata/blob/main/docs/config.adoc
+
+21:49:15.9873 [0m[31m[ERROR] [0mfailed to parse file
+
+
+Press enter to exit
+Error: failed to parse file
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+21:50:46.8478 [0m[31m[ERROR] [0m  × Error in configuration
+    ╭─[/Users/bogdandegtyarev/.config/kanata/config.kbd:57:1]
+ 57 │   tmx (tap-hold-press 150 150 C-q (layer-while-held tmux))       ;; RCmd: C-q / Tmux
+ 58 │   fnl (layer-while-held fkeys)                                   ;; Fn: F-keys layer
+    ·                         ──┬──
+    ·                           ╰── Error here
+ 59 │ 
+    ╰────
+  help: layer name is not declared in any deflayer: fkeys
+        
+        For more info, see the configuration guide:
+        https://github.com/jtroo/kanata/blob/main/docs/config.adoc
+
+21:50:46.8480 [0m[31m[ERROR] [0mfailed to parse file
+
+
+Press enter to exit
+Error: failed to parse file
+21:50:56.8861 [0m[31m[ERROR] [0m  × Error in configuration
+    ╭─[/Users/bogdandegtyarev/.config/kanata/config.kbd:57:1]
+ 57 │   tmx (tap-hold-press 150 150 C-q (layer-while-held tmux))       ;; RCmd: C-q / Tmux
+ 58 │   fnl (layer-while-held fkeys)                                   ;; Fn: F-keys layer
+    ·                         ──┬──
+    ·                           ╰── Error here
+ 59 │ 
+    ╰────
+  help: layer name is not declared in any deflayer: fkeys
+        
+        For more info, see the configuration guide:
+        https://github.com/jtroo/kanata/blob/main/docs/config.adoc
+
+21:50:56.8862 [0m[31m[ERROR] [0mfailed to parse file
+
+
+Press enter to exit
+Error: failed to parse file
+21:51:06.9267 [0m[31m[ERROR] [0m  × Error in configuration
+    ╭─[/Users/bogdandegtyarev/.config/kanata/config.kbd:57:1]
+ 57 │   tmx (tap-hold-press 150 150 C-q (layer-while-held tmux))       ;; RCmd: C-q / Tmux
+ 58 │   fnl (layer-while-held fkeys)                                   ;; Fn: F-keys layer
+    ·                         ──┬──
+    ·                           ╰── Error here
+ 59 │ 
+    ╰────
+  help: layer name is not declared in any deflayer: fkeys
+        
+        For more info, see the configuration guide:
+        https://github.com/jtroo/kanata/blob/main/docs/config.adoc
+
+21:51:06.9268 [0m[31m[ERROR] [0mfailed to parse file
+
+
+Press enter to exit
+Error: failed to parse file
+21:51:16.9655 [0m[31m[ERROR] [0m  × Error in configuration
+    ╭─[/Users/bogdandegtyarev/.config/kanata/config.kbd:57:1]
+ 57 │   tmx (tap-hold-press 150 150 C-q (layer-while-held tmux))       ;; RCmd: C-q / Tmux
+ 58 │   fnl (layer-while-held fkeys)                                   ;; Fn: F-keys layer
+    ·                         ──┬──
+    ·                           ╰── Error here
+ 59 │ 
+    ╰────
+  help: layer name is not declared in any deflayer: fkeys
+        
+        For more info, see the configuration guide:
+        https://github.com/jtroo/kanata/blob/main/docs/config.adoc
+
+21:51:16.9656 [0m[31m[ERROR] [0mfailed to parse file
+
+
+Press enter to exit
+Error: failed to parse file
+21:51:27.0246 [0m[31m[ERROR] [0m  × Error in configuration
+    ╭─[/Users/bogdandegtyarev/.config/kanata/config.kbd:57:1]
+ 57 │   tmx (tap-hold-press 150 150 C-q (layer-while-held tmux))       ;; RCmd: C-q / Tmux
+ 58 │   fnl (layer-while-held fkeys)                                   ;; Fn: F-keys layer
+    ·                         ──┬──
+    ·                           ╰── Error here
+ 59 │ 
+    ╰────
+  help: layer name is not declared in any deflayer: fkeys
+        
+        For more info, see the configuration guide:
+        https://github.com/jtroo/kanata/blob/main/docs/config.adoc
+
+21:51:27.0248 [0m[31m[ERROR] [0mfailed to parse file
+
+
+Press enter to exit
+Error: failed to parse file
+21:51:37.0854 [0m[31m[ERROR] [0m  × Error in configuration
+    ╭─[/Users/bogdandegtyarev/.config/kanata/config.kbd:57:1]
+ 57 │   tmx (tap-hold-press 150 150 C-q (layer-while-held tmux))       ;; RCmd: C-q / Tmux
+ 58 │   fnl (layer-while-held fkeys)                                   ;; Fn: F-keys layer
+    ·                         ──┬──
+    ·                           ╰── Error here
+ 59 │ 
+    ╰────
+  help: layer name is not declared in any deflayer: fkeys
+        
+        For more info, see the configuration guide:
+        https://github.com/jtroo/kanata/blob/main/docs/config.adoc
+
+21:51:37.0856 [0m[31m[ERROR] [0mfailed to parse file
+
+
+Press enter to exit
+Error: failed to parse file
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+21:58:51.6621 [0m[31m[ERROR] [0m  × Error in configuration
+     ╭─[/Users/bogdandegtyarev/.config/kanata/config.kbd:214:1]
+ 214 │   _    _    _    _    _    _    _    @tbl @tbr _    @wmx _    _    _
+ 215 │   @tsp _    _    _    _    _    @rsp @mvl @mvd @mvu @mvr _    @tsn
+     ·   ──┬─
+     ·     ╰── Error here
+ 216 │   _    @jnl @jnd @jnu @jnr _    @rsm @fcl @fcd @fcu @fcr _
+     ╰────
+  help: Referenced unknown alias tsp. Note that order of declarations
+        matter.
+        
+        For more info, see the configuration guide:
+        https://github.com/jtroo/kanata/blob/main/docs/config.adoc
+
+21:58:51.6622 [0m[31m[ERROR] [0mfailed to parse file
+
+
+Press enter to exit
+Error: failed to parse file
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in posix_stat: failed to determine attributes for the specified path: Permission denied ["/Library/Application Support/org.pqrs/tmp/rootonly/vhidd_server"]

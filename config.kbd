@@ -1,5 +1,9 @@
-;; Kanata config - QWERTY/Colemak-DH switchable
-;; Press A+F12 to toggle between layouts
+;; ============================================================================
+;; KANATA CONFIG - QWERTY/Colemak-DH Switchable
+;; ============================================================================
+;; Toggle layout: Hold A + press F12
+;; Emergency exit: lctl + spc + esc
+;; ============================================================================
 
 (defcfg
   process-unmapped-keys yes
@@ -7,7 +11,10 @@
   rapid-event-delay 5
 )
 
-;; Mac keyboard source definition
+;; ============================================================================
+;; SOURCE DEFINITION (Mac keyboard)
+;; ============================================================================
+
 (defsrc
   esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
@@ -19,153 +26,136 @@
                                      left down rght
 )
 
-;; Aliases
+;; ============================================================================
+;; ALIASES
+;; ============================================================================
+
 (defalias
-  ;; Left cmd: tap = cmd, hold = aerospace layer (window management)
-  lc (tap-hold-press 150 150 lmet (layer-while-held aerospace))
+  ;; --------------------------------------------------------------------------
+  ;; Modifier Shortcuts
+  ;; --------------------------------------------------------------------------
+  hyp (multi lctl lsft lalt lmet)  ;; Hyper = Ctrl+Shift+Alt+Cmd
+  meh (multi lctl lsft lalt)       ;; Meh   = Ctrl+Shift+Alt
 
-  ;; Caps Lock: tap = escape, hold = control
-  cap (tap-hold-press 150 150 esc lctl)
+  ;; --------------------------------------------------------------------------
+  ;; Home Row Mods & Tap-Hold Keys
+  ;; --------------------------------------------------------------------------
+  cap (tap-hold-press 150 150 esc lctl)              ;; Caps: Esc / Ctrl
+  arr (tap-hold 200 200 a (layer-while-held arrows)) ;; A: a / Arrows layer
+  arr-c (tap-hold 200 200 a (layer-while-held arrows-colemak)) ;; A for Colemak mode
+  apo (tap-hold-press 150 150 ' @hyp)                ;; ': ' / Hyper
+  lsh (tap-hold-press 150 150 A-tab lsft)            ;; LShift: Alt+Tab / Shift
+  rsh (tap-hold-press 150 150 rsft lmet)             ;; RShift: Shift / Cmd
+  eql (tap-hold-press 150 150 = (multi lalt lmet))   ;; =: = / Opt+Cmd
+  slq (tap-hold-press 150 150 / S-/)                 ;; /: / / ?
 
-  ;; Semicolon: tap = ;, hold = Hyper (Ctrl+Shift+Alt+Cmd) for Aerospace
-  scl (tap-hold-press 150 150 ; (multi lctl lsft lalt lmet))
+  ;; --------------------------------------------------------------------------
+  ;; Layer Activation Keys
+  ;; --------------------------------------------------------------------------
+  lc  (tap-hold-press 150 150 lmet (layer-while-held aerospace)) ;; LCmd: Cmd / Aerospace
+  sym (tap-hold-press 150 150 spc (layer-while-held symbols))    ;; Space: Space / Symbols
+  tmx (tap-hold-press 150 150 C-q (layer-while-held tmux))       ;; RCmd: C-q / Tmux
+  fnl (layer-while-held fkeys)                                   ;; Fn: F-keys layer
 
-  ;; A: tap = a, hold = arrows layer (longer timeout to avoid misfires)
-  arr (tap-hold 200 200 a (layer-while-held arrows))
-
-  ;; Tmux: tap = Ctrl+Q (tmux prefix), hold = tmux layer
-  tmx (tap-hold-press 150 150 C-q (layer-while-held tmux))
-
-  ;; Tmux macros - exact copy from Voyager Layer 4
-  ;; MACRO_0: C-q then (
-  m0 (macro C-q 5 S-9)
-  ;; MACRO_1: C-q then C-left
-  m1 (macro C-q 5 C-left)
-  ;; MACRO_2: C-q then C-down
-  m2 (macro C-q 5 C-down)
-  ;; MACRO_3: C-q then C-up
-  m3 (macro C-q 5 C-up)
-  ;; MACRO_4: C-q then C-right
-  m4 (macro C-q 5 C-rght)
-  ;; MACRO_5: C-q then %
-  m5 (macro C-q 5 S-5)
-  ;; MACRO_6: C-q then {
-  m6 (macro C-q 5 S-[)
-  ;; MACRO_7: C-q then }
-  m7 (macro C-q 5 S-])
-  ;; MACRO_8: C-q then "
-  m8 (macro C-q 5 S-')
-  ;; MACRO_9: C-q then z
-  m9 (macro C-q 5 z)
-  ;; MACRO_10: C-q then left
-  m10 (macro C-q 5 left)
-  ;; MACRO_11: C-q then down
-  m11 (macro C-q 5 down)
-  ;; MACRO_12: C-q then up
-  m12 (macro C-q 5 up)
-  ;; MACRO_13: C-q then right
-  m13 (macro C-q 5 rght)
-  ;; MACRO_14: C-q then )
-  m14 (macro C-q 5 S-0)
-
-  ;; Window navigation (Alt keys for tmux)
-  wnl A-n           ;; go to left window
-  wnr A-e           ;; go to right window
-  wsl A-l           ;; swap window left
-  wsr A-u           ;; swap window right
-
-  ;; Auto-shift for /
-  slq (tap-hold-press 150 150 / S-/)
-
-  ;; Right shift: tap = shift, hold = left cmd
-  rsh (tap-hold-press 150 150 rsft lmet)
-
-  ;; Right option: tap = ralt, hold = backlight layer
-  rop (tap-hold-press 150 150 ralt (layer-while-held backlight))
-
-  ;; Space: tap = space, hold = symbols layer
-  sym (tap-hold-press 150 150 spc (layer-while-held symbols))
-
-  ;; Aerospace window management (Hyper = Ctrl+Shift+Alt+Cmd, Meh = Ctrl+Shift+Alt)
-  ;; Move window: Hyper + arrows
-  mvl (multi lctl lsft lalt lmet left)
-  mvd (multi lctl lsft lalt lmet down)
-  mvu (multi lctl lsft lalt lmet up)
-  mvr (multi lctl lsft lalt lmet rght)
-  ;; Focus window: Meh + arrows
-  fcl (multi lctl lsft lalt left)
-  fcd (multi lctl lsft lalt down)
-  fcu (multi lctl lsft lalt up)
-  fcr (multi lctl lsft lalt rght)
-  ;; Resize window: Hyper + plus/minus
-  rsp (multi lctl lsft lalt lmet =)
-  rsm (multi lctl lsft lalt lmet -)
-  ;; Tab/space switching: Alt+Cmd+arrows
-  tbl A-M-left
-  tbr A-M-rght
-  ;; Layout cycling: Meh + comma/slash
-  cyh (multi lctl lsft lalt ,)      ;; horizontal
-  cyv (multi lctl lsft lalt /)      ;; vertical
-
-  ;; Window maximize toggle: Hyper+M
-  wmx (multi lctl lsft lalt lmet m)
-
-  ;; Reset Aerospace config: Hyper+R
-  rst (multi lctl lsft lalt lmet r)
-
-  ;; Tmux session navigation (on aerospace layer for convenience)
-  tsp (macro C-q 5 S-9)             ;; previous session: C-q (
-  tsn (macro C-q 5 S-0)             ;; next session: C-q )
-
-  ;; Joins: Hyper + direction keys for joining windows
-  jnl (multi lctl lsft lalt lmet z)  ;; join left
-  jnd (multi lctl lsft lalt lmet x)  ;; join down
-  jnu (multi lctl lsft lalt lmet c)  ;; join up
-  jnr (multi lctl lsft lalt lmet v)  ;; join right
-
-  ;; Left shift: tap = Alt+Tab, hold = shift
-  lsh (tap-hold-press 150 150 A-tab lsft)
-
-  ;; Equal key: tap = =, hold = Option+Command
-  eql (tap-hold-press 150 150 = (multi lalt lmet))
-
-  ;; Apostrophe: tap = ', hold = Hyper (Ctrl+Shift+Alt+Cmd)
-  apo (tap-hold-press 150 150 ' (multi lctl lsft lalt lmet))
-
-  ;; Layer switching between QWERTY and Colemak-DH
+  ;; --------------------------------------------------------------------------
+  ;; Layout Switching (A + F12)
+  ;; --------------------------------------------------------------------------
   toqwerty (layer-switch qwerty)
   tocolemak (layer-switch colemak)
 
-  ;; A key for Colemak mode (uses colemak arrows layer)
-  arr-c (tap-hold 200 200 a (layer-while-held arrows-colemak))
+  ;; --------------------------------------------------------------------------
+  ;; Tmux Macros (C-q prefix)
+  ;; --------------------------------------------------------------------------
+  ;; Pane resize
+  m1  (macro C-q 5 C-left)   ;; resize left
+  m2  (macro C-q 5 C-down)   ;; resize down
+  m3  (macro C-q 5 C-up)     ;; resize up
+  m4  (macro C-q 5 C-rght)   ;; resize right
+  ;; Pane navigation
+  m10 (macro C-q 5 left)     ;; nav left
+  m11 (macro C-q 5 down)     ;; nav down
+  m12 (macro C-q 5 up)       ;; nav up
+  m13 (macro C-q 5 rght)     ;; nav right
+  ;; Session/Window
+  m0  (macro C-q 5 S-9)      ;; previous session (
+  m14 (macro C-q 5 S-0)      ;; next session )
+  m5  (macro C-q 5 S-5)      ;; split %
+  m6  (macro C-q 5 S-[)      ;; split {
+  m7  (macro C-q 5 S-])      ;; split }
+  m8  (macro C-q 5 S-')      ;; rename "
+  m9  (macro C-q 5 z)        ;; zoom
+  ;; Window/pane navigation (Alt keys)
+  wnl A-n                    ;; pane left
+  wnr A-e                    ;; pane right
+  wsl A-l                    ;; swap left
+  wsr A-u                    ;; swap right
+
+  ;; --------------------------------------------------------------------------
+  ;; Aerospace Window Management (Hyper/Meh + key)
+  ;; --------------------------------------------------------------------------
+  ;; Move window (Hyper + arrows)
+  mvl (multi @hyp left)
+  mvd (multi @hyp down)
+  mvu (multi @hyp up)
+  mvr (multi @hyp rght)
+  ;; Focus window (Meh + arrows)
+  fcl (multi @meh left)
+  fcd (multi @meh down)
+  fcu (multi @meh up)
+  fcr (multi @meh rght)
+  ;; Resize (Hyper +/-)
+  rsp (multi @hyp =)
+  rsm (multi @hyp -)
+  ;; Tabs (Alt+Cmd + arrows)
+  tbl A-M-left
+  tbr A-M-rght
+  ;; Layout cycling (Meh + ,/)
+  cyh (multi @meh ,)
+  cyv (multi @meh /)
+  ;; Window actions
+  wmx (multi @hyp m)   ;; maximize
+  rst (multi @hyp r)   ;; reset config
+  ;; Join windows (Hyper + zxcv)
+  jnl (multi @hyp z)
+  jnd (multi @hyp x)
+  jnu (multi @hyp c)
+  jnr (multi @hyp v)
 )
 
-;; Base layer - QWERTY (with key modifications)
+;; ============================================================================
+;; BASE LAYERS
+;; ============================================================================
+
 (deflayer qwerty
-  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  esc  brdn brup bldn blup f5   f6   prev pp   next mute vold volu
   grv  1    2    3    4    5    6    7    8    9    0    -    @eql bspc
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   @cap @arr s    d    f    g    h    j    k    l    ;    @apo ret
   @lsh z    x    c    v    b    n    m    ,    .    @slq @rsh
-  fn   lctl lalt @lc            @sym           @tmx @rop
+  @fnl lctl lalt @lc            @sym           @tmx ralt
                                           up
                                      left down rght
 )
 
-;; Base layer - Colemak-DH (with key modifications)
 (deflayer colemak
-  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  esc  brdn brup bldn blup f5   f6   prev pp   next mute vold volu
   grv  1    2    3    4    5    6    7    8    9    0    -    @eql bspc
   tab  q    w    f    p    b    j    l    u    y    ;    [    ]    \
-  @cap @arr-c r    s    t    g    m    n    e    i    o    @apo ret
+  @cap @arr-c r  s    t    g    m    n    e    i    o    @apo ret
   @lsh z    x    c    d    v    k    h    ,    .    @slq @rsh
-  fn   lctl lalt @lc            @sym           @tmx @rop
+  @fnl lctl lalt @lc            @sym           @tmx ralt
                                           up
                                      left down rght
 )
 
-;; Symbols layer - activated by holding Left Cmd
-;; Layout based on Voyager Layer 3
+;; ============================================================================
+;; FUNCTIONAL LAYERS
+;; ============================================================================
+
+;; Symbols (Space held) -------------------------------------------------------
+;; q w e r t | y u i o p     ~  @  &  %  ( | )  ,  ^  $  ;
+;; a s d f g | h j k l ;  =  !  #  *  :  { | }  =  +  -  _  "
+;;     c v   | n   , . /              |  [ |    ]     <  >  ?
 (deflayer symbols
   _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
@@ -177,9 +167,7 @@
                                      _    _    _
 )
 
-;; Arrows layer for QWERTY - activated by holding A
-;; JKL; style: j=left, k=down, l=up, ;=right
-;; F12 switches to Colemak-DH
+;; Arrows (A held) - F12 toggles layout ---------------------------------------
 (deflayer arrows
   _    _    _    _    _    _    _    _    _    _    _    _    @tocolemak
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
@@ -191,9 +179,6 @@
                                      _    _    _
 )
 
-;; Arrows layer for Colemak - activated by holding A
-;; JKL; style: j=left, k=down, l=up, ;=right
-;; F12 switches back to QWERTY
 (deflayer arrows-colemak
   _    _    _    _    _    _    _    _    _    _    _    _    @toqwerty
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
@@ -205,49 +190,43 @@
                                      _    _    _
 )
 
-;; Tmux layer - activated by holding right cmd
-;; Voyager Layer 4 layout moved to home row
-;; Home row left: ( resize-L/D/U/R %
-;; Home row right: zoom nav-L/D/U/R )
-;; Z-row: { } "
+;; Tmux (Right Cmd held) ------------------------------------------------------
+;; Home row: ( resize-LDUR % | zoom nav-LDUR )
 (deflayer tmux
   _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    @wsl @wsr _    _    _    _    _
-  @m0  @m1  @m2  @m3  @m4  @m5  @m9  @m10 @m11 @m12 @m13 @m14 _
+  @m0  @m1  @m2  @m3  @m4  @m5  @m9  @m10 @m11 @m12 @m13 _    @m14
   _    _    _    @m6  @m7  @m8  @wnl @wnr _    _    _    _
   _    _    _    _              _              _    _
                                           _
                                      _    _    _
 )
 
-;; Backlight layer - activated by holding right option
-;; up = increase, down = decrease keyboard backlight
-(deflayer backlight
+;; Aerospace (Left Cmd held) --------------------------------------------------
+;; Top:    tabs, maximize
+;; Home:   session-prev, resize+, move-LDUR, session-next
+;; Bottom: joins, resize-, focus-LDUR
+;; Fn row: reset, layout-h, layout-v
+(deflayer aerospace
   _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    @tbl @tbr _    @wmx _    _    _
+  @m0  _    _    _    _    _    @rsp @mvl @mvd @mvu @mvr _    @m14
+  _    @jnl @jnd @jnu @jnr _    @rsm @fcl @fcd @fcu @fcr _
+  @rst _    _    _              _              @cyh @cyv
+                                          _
+                                     _    _    _
+)
+
+;; F-keys (Fn held) - restore original F1-F12 ---------------------------------
+(deflayer fkeys
+  _    f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _              _              _    _
-                                          blup
-                                     _    bldn _
-)
-
-;; Aerospace layer - activated by holding Left Cmd
-;; Voyager Layer 5 layout for window management
-;; Top row: tab switching, window max toggle on P
-;; Home row: resize+, move window, tmux session nav
-;; Bottom row: resize-, focus window (m,.//)
-;; Z-row: joins (z=left, x=down, c=up, v=right)
-;; fn = reset config, rmet = horizontal, ralt = vertical
-(deflayer aerospace
-  _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    _    @tbl @tbr _    @wmx _    _    _
-  @tsp _    _    _    _    _    @rsp @mvl @mvd @mvu @mvr _    @tsn
-  _    @jnl @jnd @jnu @jnr _    @rsm @fcl @fcd @fcu @fcr _
-  @rst _    _    _              _              @cyh @cyv
                                           _
                                      _    _    _
 )
